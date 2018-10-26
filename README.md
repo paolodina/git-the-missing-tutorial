@@ -1,11 +1,18 @@
-Git: The Missing Tutorial
+Git: il tutorial mancante
 ----
 
-This tutorial will help you get started with Git.
+Questo tutorial ti aiuterà a cominciare con Git.
 
-> **Audience of this tutorial are beginners, so don't expect advanced concepts.**
 
-Before we start make sure `git --version` command successfully returns. If the output is something like **command not found** then please make sure Git is properly installed on your machine. My machine output is shown below. **Output on your machine might be different.**
+> **Il tutorial è scritto per chi è alle prime armi o non conosce Git, per
+cui non aspettarti di trovare concetti avanzati.**
+
+Prima di cominciare assicurati che il comando `git --version` possa essere
+eseguito senza errori. Se l'output è qualcosa di simile a **comando non
+trovato** assicurati che Git sia installato sul tuo computer.
+
+L'output sul mio computer è riportato di seguito. **Sul tuo può essere
+differente.**
 
 ```bash
 $ git --version
@@ -14,16 +21,19 @@ $ git --version
 git version 2.5.4 (Apple Git-61)
 ```
 
-> **Commands that a user should type on his/her terminal are prefixed with the shell prompt symbol `$`. The output of command follows the command. Also, you don't have to type `$` on your terminal.**
+> **I comandi che un utente digita a terminale hanno come prefisso il simbolo
+`$`. L'output del comando viene mostrato dopo l'esecuzione del comando.
+Inoltre non devi specificare il simbolo `$`.**
 
-Make sure you have configured your user with Git.  This information will be used by Git.
+Assicurati di aver configurato il tuo utente per Git.
 
 ```bash
-$ git config --global user.name "Your name"
-$ git config --global user.email "Your email"
+$ git config --global user.name "Il tuo nome"
+$ git config --global user.email "La tua email"
 ```
 
-The command shown above populates a file named `.gitconfig` in your user home directory with configuration information.
+Queste informazioni saranno scritte in un file chiamato `.gitconfig` nella
+home directory dell'utente.
 
 ```bash
 $ cat ~/.gitconfig
